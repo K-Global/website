@@ -5,8 +5,11 @@ VATSIM virtual airline. Built with [MkDocs](https://www.mkdocs.org/) and the
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, and
 deployed to GitHub Pages via GitHub Actions on every push to `main`.
 
-> **Live URL:** https://k-global.github.io/website/ (unless a custom domain is
-> configured — see [`HANDOFF.md`](HANDOFF.md)).
+> **Live URL:** https://kglobalair.com (custom domain — see
+> [`HANDOFF.md`](HANDOFF.md) for the DNS + Pages steps).
+
+Brand follows the K Global Brand Guidelines (Edition v1.0): Marine Teal accent
+on a monochrome core; Inter Tight / Inter / B612 Mono; "Go further, together."
 
 ## Local preview
 
@@ -49,7 +52,7 @@ website/
 ## Editing content
 
 - Content is plain Markdown under `docs/`. Nav is defined in `mkdocs.yml`.
-- **Rebranding** is a one-file change: edit the colour tokens at the top of
+- **Rebranding** is a one-file change: edit the brand tokens at the top of
   `docs/stylesheets/extra.css`.
 - Placeholders (the join URL and some imagery) are called out in
   [`HANDOFF.md`](HANDOFF.md) and flagged inline in the relevant files.

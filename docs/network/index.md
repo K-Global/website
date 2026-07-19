@@ -35,7 +35,7 @@ high-impact on this page. Drop the artwork in at
 
 - **Frankfurt is the heart.** Every region ultimately connects back through
   the European core, so long-haul waves and short-haul feed line up the way
-  they do at a real group hub.
+  they do at a real-world hub airline.
 - **Regional gateways carry their continents.** Singapore, Tokyo and Hong
   Kong anchor Asia; New York and Los Angeles split the United States coasts;
   São Paulo, Sydney and Lagos hold South America, Oceania and Africa.

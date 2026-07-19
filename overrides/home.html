@@ -1,7 +1,6 @@
 {#-
-  Homepage template: full-bleed brand hero above the standard page content.
-  Applied only to pages that set `template: home.html` in their front matter
-  (see docs/index.md). Everything else uses Material's default main.html.
+  Homepage hero (dark Ink field, one accent) — brand guide, Edition v1.0.
+  Applied only to pages with `template: home.html` in their front matter.
 -#}
 {% extends "main.html" %}
 
@@ -10,21 +9,23 @@
 
   <section class="kg-hero">
     <div class="kg-hero__inner">
-      <span class="kg-hero__eyebrow">Callsign KAY &mdash; &ldquo;Kayak&rdquo;</span>
-      <h1>One airline, one callsign,<br>the whole world.</h1>
+      <span class="kg-hero__eyebrow">K Global · Virtual Airline</span>
+      <h1>Go further,<br><span class="kg-acc">together.</span></h1>
       <p class="kg-hero__lede">
-        K&nbsp;Global is a full-spectrum virtual airline flown on VATSIM under a
-        single callsign &mdash; from First-class ultra-long-haul to low-cost,
-        leisure charter, regional feed, business jets and freight, all growing
-        from a Frankfurt core.
+        A community-driven virtual airline on VATSIM, dispatched through VAMSYS.
+        Accurate routes, correct procedures, and people who love to fly &mdash;
+        a premium place to fly, learn and belong.
       </p>
       <div class="kg-hero__cta">
         <a href="{{ 'join/' | url }}" class="md-button md-button--primary">
-          Fly with us
+          Join the crew
         </a>
         <a href="{{ 'network/' | url }}" class="md-button">
           Explore the network
         </a>
+      </div>
+      <div class="kg-hero__meta">
+        <span>9 business units</span><span>10 hubs · 7 regions</span><span>Platform · VAMSYS</span>
       </div>
     </div>
   </section>

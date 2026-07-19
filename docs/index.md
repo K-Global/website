@@ -1,5 +1,5 @@
 ---
-title: K Global — one airline, one callsign, the whole world
+title: K Global — go further, together
 template: home.html
 hide:
   - navigation
@@ -8,25 +8,23 @@ hide:
 
 <div class="kg-stats" markdown>
 <div class="kg-stat" markdown><span class="kg-stat__num">9</span><span class="kg-stat__label">Business units</span></div>
-<div class="kg-stat" markdown><span class="kg-stat__num">10</span><span class="kg-stat__label">Hubs, 7 regions</span></div>
+<div class="kg-stat" markdown><span class="kg-stat__num">10</span><span class="kg-stat__label">Hubs · 7 regions</span></div>
 <div class="kg-stat" markdown><span class="kg-stat__num">~848</span><span class="kg-stat__label">City pairs</span></div>
 <div class="kg-stat" markdown><span class="kg-stat__num">~421</span><span class="kg-stat__label">Aircraft</span></div>
 </div>
 
-## A whole airline group, flown under one callsign
+## A premium place to fly, learn and belong
 
-K Global is a **fictional virtual airline** for [VATSIM](https://vatsim.net),
-dispatched through VAMSYS and modelled on the **Lufthansa Group**. Where most
-virtual airlines fly one slice of the market, K Global flies the *whole* map:
-marquee premium long-haul, standard intercontinental, full-service
-short-haul, low-cost, leisure charter, regional feed, executive jets and
-main-deck freight — **nine business units, one brand, one callsign: KAY,
-spoken "Kayak."**
+K Global is a **community-driven virtual airline** for [VATSIM](https://vatsim.net),
+dispatched through VAMSYS. We pair the precision of real-world aviation with the
+warmth of a shared crew room — accurate routes, correct procedures, and people
+who love to fly.
 
-Everything grows from a **Frankfurt (EDDF)** core and spreads across ten hubs
-on every inhabited continent. Whatever you like to fly — a Concorde down the
-Atlantic, a turboprop into a thin regional market, or a freighter across the
-Pacific at 3 a.m. — there is a place for it here.
+Under one identity sit **nine business units**, each a different way to fly:
+flagship long-haul, everyday intercontinental, low-cost, leisure, regional
+feed, charter, training and freight. They grow from a **Frankfurt core** and
+spread across ten hubs on every inhabited continent — so whatever you like to
+fly, there's a place for it here, and a crew to fly it with.
 
 <div class="grid cards" markdown>
 
@@ -34,9 +32,8 @@ Pacific at 3 a.m. — there is a place for it here.
 
     ---
 
-    Ten hubs across seven regions, anchored at Frankfurt, with a live
-    route structure of roughly **848 city pairs**. See how the world
-    connects.
+    Ten hubs across seven regions, anchored at Frankfurt, with a live route
+    structure of roughly **848 city pairs**. See how the world connects.
 
     [:octicons-arrow-right-24: The network](network/index.md)
 
@@ -44,9 +41,9 @@ Pacific at 3 a.m. — there is a place for it here.
 
     ---
 
-    From flagship **Premier** to low-cost **Express**, leisure **Charter**,
-    **Regional** feed and **Cargo** — one callsign, distinguished by market,
-    not by separate brands.
+    From flagship **K Premier** to low-cost **K Express**, **K Regional** feed,
+    **K Academy** training and **K Cargo** freight — one system, nine ways to
+    fly.
 
     [:octicons-arrow-right-24: Business units](business-units/index.md)
 
@@ -54,18 +51,18 @@ Pacific at 3 a.m. — there is a place for it here.
 
     ---
 
-    A realistic, group-shaped fleet of around **421 aircraft** — Concorde and
-    A380 flagships down to E-Jets, turboprops, business jets and freighters.
+    A realistic fleet of around **421 aircraft** — flagship wide-bodies down
+    to E-Jets, turboprops and freighters.
 
     [:octicons-arrow-right-24: The fleet](fleet/index.md)
 
 </div>
 
-## Ready when you are
+## The crew is the airline
 
-You bring a VATSIM account, a flight simulator and a love of the line. We
-bring the network, the fleet, the structure and something new to fly toward
-every month.
+We fly, learn and improve together. There's always another destination on the
+map, a group flight on the calendar, and someone in the crew room happy to help
+you brief it.
 
-[Join K Global :material-arrow-right:](join.md){ .md-button .md-button--primary }
+[Join the crew :material-arrow-right:](join.md){ .md-button .md-button--primary }
 [What it's like to fly here](flying/index.md){ .md-button }

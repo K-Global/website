@@ -4,10 +4,9 @@ title: Join K Global
 
 <span class="kg-eyebrow">Join us</span>
 
-# Fly with K Global
+# Join the crew
 
-Ready to fly the whole world under one callsign? Here's what you need and how
-to get started.
+Ready to fly, learn and belong? Here's what you need and how to get started.
 
 ## What you'll need
 
@@ -38,14 +37,14 @@ to get started.
 
 ## What you get
 
-- **Variety** — nine business units and around 421 aircraft, from Concorde to
+- **Variety** — nine business units and around 421 aircraft, flagship to
   turboprop to freighter. Fly what you love.
 - **A real network** — ten hubs across seven regions and roughly 848 city
   pairs, all live and ready to fly.
-- **Structure** — one callsign, one identity, and a clear place for every kind
-  of flying.
-- **Always something on** — a monthly unit spotlight plus evergreen and
-  seasonal challenges to fly toward.
+- **A crew room** — group flights, a welcoming community, and help whenever you
+  need it. The crew is the airline.
+- **Always something on** — a monthly unit spotlight plus evergreen and seasonal
+  challenges to fly toward.
 
 ## Start your application
 

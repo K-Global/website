@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  PLACEHOLDER wordmark logo for the site header.
-  Generated as a text/SVG stand-in until a real K Global logo asset is supplied.
-  Designed to sit on the navy header bar (renders light). Legally distinct:
-  no real-world airline mark reproduced.
+  PLACEHOLDER header lockup for K Global — paddler symbol + wordmark.
+  Stand-in in the brand style (mono + Marine Teal) until the real assets
+  (assets/symbol.png, assets/wordmark-light.png from the brand guide) are
+  supplied. Renders light for the dark (Ink) header bar.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" role="img" aria-label="K Global">
-  <g fill="none" stroke="#D4A24C" stroke-width="2.2">
-    <circle cx="20" cy="20" r="14"/>
-    <ellipse cx="20" cy="20" rx="6" ry="14"/>
-    <line x1="6" y1="20" x2="34" y2="20"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44" role="img" aria-label="K Global">
+  <!-- symbol: forward-leaning paddler in a squircle -->
+  <rect x="2" y="6" width="32" height="32" rx="9" fill="#0F5E6E"/>
+  <g stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <!-- paddle -->
+    <line x1="11" y1="15" x2="25" y2="29"/>
+    <!-- body, forward lean -->
+    <path d="M14 30 q6 -4 11 -3"/>
   </g>
-  <text x="44" y="27" font-family="Inter, Arial, sans-serif" font-size="20"
-        font-weight="800" letter-spacing="0.5" fill="#FFFFFF">K</text>
-  <text x="60" y="27" font-family="Inter, Arial, sans-serif" font-size="20"
-        font-weight="400" letter-spacing="3" fill="#FFFFFF">GLOBAL</text>
+  <circle cx="20.5" cy="16.5" r="2.4" fill="#FFFFFF"/>
+  <!-- wordmark -->
+  <text x="44" y="28.5" font-family="'Inter Tight', Inter, Arial, sans-serif" font-size="20"
+        font-weight="800" letter-spacing="-0.3" fill="#FFFFFF">K</text>
+  <text x="59" y="28.5" font-family="'Inter Tight', Inter, Arial, sans-serif" font-size="20"
+        font-weight="600" letter-spacing="-0.2" fill="#FFFFFF">Global</text>
 </svg>
