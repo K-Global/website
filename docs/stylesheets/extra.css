@@ -1,144 +1,149 @@
 /* ==========================================================================
-   K Global — brand system
+   K Global — brand system  (per K Global Brand Guidelines, Edition v1.0)
    --------------------------------------------------------------------------
-   This is the single source of truth for brand colour. A rebrand should be a
-   one-file change: adjust the tokens below and the whole site follows.
-
-   Palette (fictional Lufthansa-Group homage — deliberately legally distinct;
-   no trademarked logo or crane-yellow reproduced):
-     - Deep navy   #0B2E4F   (primary)
-     - Ocean blue  #1E5B8F   (links / interactive)
-     - Warm gold   #D4A24C   (accent)
+   Monochrome core + one confident accent (Marine Teal). Single source of
+   truth for brand colour — a rebrand is an edit to the tokens below.
+   Type: Inter Tight (display) · Inter (body) · B612 Mono (data/labels).
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&display=swap');
+
 :root {
-  --kg-navy:        #0B2E4F;
-  --kg-navy-deep:   #071F36;
-  --kg-ocean:       #1E5B8F;
-  --kg-ocean-light: #3E7EB5;
-  --kg-gold:        #D4A24C;
-  --kg-gold-deep:   #B8863A;
-  --kg-cloud:       #F4F7FA;
-  --kg-ink:         #0E1B28;
+  /* Neutrals — the core */
+  --kg-ink:    #14181B;   /* primary text · dark surfaces   */
+  --kg-ink2:   #101316;   /* near-black surfaces (header/hero) */
+  --kg-slate:  #3A3F44;   /* secondary text                 */
+  --kg-steel:  #71757A;   /* muted · captions               */
+  --kg-line:   #E4E2DC;   /* hairlines · dividers           */
+  --kg-cloud:  #F6F5F2;   /* page background                */
+  --kg-paper:  #FFFFFF;   /* cards · surfaces               */
+
+  /* Accent — Marine Teal */
+  --kg-accent:      #0F5E6E;
+  --kg-accent-ink:  #0A3B44;
+  --kg-accent-tint: #E3EEEF;
+  --kg-accent-lift: #13748A;
 }
 
 /* ---- Light scheme -------------------------------------------------------- */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        var(--kg-navy);
-  --md-primary-fg-color--light: var(--kg-ocean);
-  --md-primary-fg-color--dark:  var(--kg-navy-deep);
-  --md-accent-fg-color:         var(--kg-gold-deep);
-  --md-typeset-a-color:         var(--kg-ocean);
+  --md-primary-fg-color:        var(--kg-ink2);
+  --md-primary-fg-color--light: var(--kg-slate);
+  --md-primary-fg-color--dark:  #000000;
+  --md-accent-fg-color:         var(--kg-accent);
+  --md-typeset-a-color:         var(--kg-accent);
+  --md-default-bg-color:        var(--kg-cloud);
+  --md-typeset-color:           var(--kg-ink);
 }
 
 /* ---- Dark scheme --------------------------------------------------------- */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        var(--kg-navy-deep);
-  --md-primary-fg-color--light: var(--kg-ocean);
-  --md-primary-fg-color--dark:  #050F1C;
-  --md-accent-fg-color:         var(--kg-gold);
-  --md-typeset-a-color:         var(--kg-ocean-light);
-  --md-hue: 215;
+  --md-primary-fg-color:        var(--kg-ink2);
+  --md-primary-fg-color--light: var(--kg-steel);
+  --md-primary-fg-color--dark:  #000000;
+  --md-accent-fg-color:         #3FA7BC;
+  --md-typeset-a-color:         #6FC3D4;
+  --md-hue: 205;
+}
+
+/* ---- Typography ---------------------------------------------------------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__title,
+.kg-hero h1 {
+  font-family: "Inter Tight", "Inter", -apple-system, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.md-typeset h2 { font-weight: 700; }
+.md-typeset h3 { font-weight: 700; letter-spacing: -0.01em; }
+
+/* Monospace brand labels (B612 Mono comes from theme.font.code) */
+.kg-eyebrow,
+.kg-mono {
+  font-family: "B612 Mono", ui-monospace, monospace;
 }
 
 /* ==========================================================================
-   Hero (homepage)
+   Hero (homepage) — dark ink field, one accent
    ========================================================================== */
 .kg-hero {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5.5rem 1rem 5rem;
+  padding: 5rem 1rem 4.5rem;
   color: #fff;
-  background:
-    radial-gradient(120% 120% at 50% 0%, rgba(212,162,76,0.20) 0%, rgba(11,46,79,0) 55%),
-    linear-gradient(160deg, var(--kg-navy) 0%, var(--kg-navy-deep) 70%, #04121f 100%);
-  overflow: hidden;
+  background: var(--kg-ink2);
+  text-align: left;
 }
-
-/* Subtle great-circle "route" arcs behind the hero text. */
-.kg-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 15% 120%, rgba(255,255,255,0.06) 0 1px, transparent 1px),
-    radial-gradient(circle at 85% 130%, rgba(212,162,76,0.10) 0 1px, transparent 1px);
-  background-size: 3px 3px, 4px 4px;
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 .kg-hero__inner {
-  position: relative;
-  max-width: 46rem;
-  z-index: 1;
+  max-width: 61rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-
 .kg-hero__eyebrow {
   display: inline-block;
   font-size: 0.72rem;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--kg-gold);
+  color: var(--kg-accent-lift);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
-
 .kg-hero h1 {
-  font-size: 2.8rem;
-  line-height: 1.08;
-  font-weight: 800;
-  margin: 0 0 1rem;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 0.98;
+  margin: 0 0 1.1rem;
   color: #fff;
-  letter-spacing: -0.02em;
 }
-
+.kg-hero h1 .kg-acc { color: var(--kg-accent-lift); }
 .kg-hero p.kg-hero__lede {
-  font-size: 1.12rem;
-  line-height: 1.65;
-  color: rgba(255,255,255,0.86);
-  margin: 0 auto 2rem;
+  font-size: 1.14rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+  margin: 0 0 1.9rem;
   max-width: 40rem;
 }
-
-.kg-hero__cta {
+.kg-hero__cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.kg-hero__meta {
+  margin-top: 2.4rem;
   display: flex;
-  gap: 0.8rem;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 0.6rem 1.8rem;
+  font-family: "B612 Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
 }
 
-.kg-hero .md-button {
-  margin: 0;
+/* ==========================================================================
+   Buttons — accent drives primary action, soft corners
+   ========================================================================== */
+.md-typeset .md-button {
+  border-radius: 9px;
+  font-weight: 600;
+  border-width: 1.5px;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
 }
-
-.kg-hero .md-button--primary {
-  background-color: var(--kg-gold);
-  border-color: var(--kg-gold);
-  color: var(--kg-ink);
+.md-typeset .md-button--primary {
+  background-color: var(--kg-accent);
+  border-color: var(--kg-accent);
+  color: #fff;
 }
-.kg-hero .md-button--primary:hover,
-.kg-hero .md-button--primary:focus {
-  background-color: #E7B968;
-  border-color: #E7B968;
-  color: var(--kg-ink);
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: var(--kg-accent-ink);
+  border-color: var(--kg-accent-ink);
+  color: #fff;
 }
 .kg-hero .md-button:not(.md-button--primary) {
   color: #fff;
-  border-color: rgba(255,255,255,0.55);
+  border-color: rgba(255,255,255,0.5);
 }
 .kg-hero .md-button:not(.md-button--primary):hover {
-  background-color: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.08);
   border-color: #fff;
   color: #fff;
-}
-
-@media screen and (max-width: 44.98em) {
-  .kg-hero { padding: 3.5rem 1rem; }
-  .kg-hero h1 { font-size: 2rem; }
 }
 
 /* ==========================================================================
@@ -147,93 +152,82 @@
 .kg-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 2.5rem 0 1rem;
-  text-align: center;
+  gap: 1px;
+  margin: 2.4rem 0 1rem;
+  background: var(--kg-line);
+  border: 1px solid var(--kg-line);
+  border-radius: 14px;
+  overflow: hidden;
 }
-.kg-stats .kg-stat {
-  padding: 1rem 0.5rem;
-  border-top: 3px solid var(--kg-gold);
-  background: var(--kg-cloud);
-  border-radius: 0 0 6px 6px;
-}
-[data-md-color-scheme="slate"] .kg-stats .kg-stat {
-  background: rgba(255,255,255,0.03);
-}
+.kg-stats .kg-stat { background: var(--kg-paper); padding: 1.15rem 0.75rem; text-align: center; }
+[data-md-color-scheme="slate"] .kg-stats,
+[data-md-color-scheme="slate"] .kg-stats .kg-stat { background: rgba(255,255,255,0.03); }
 .kg-stats .kg-stat__num {
   display: block;
+  font-family: "Inter Tight", sans-serif;
   font-size: 1.9rem;
   font-weight: 800;
-  color: var(--md-primary-fg-color);
-  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--kg-ink);
+  line-height: 1.05;
 }
-[data-md-color-scheme="slate"] .kg-stats .kg-stat__num {
-  color: var(--kg-gold);
-}
+[data-md-color-scheme="slate"] .kg-stats .kg-stat__num { color: #fff; }
 .kg-stats .kg-stat__label {
   display: block;
-  font-size: 0.78rem;
+  font-family: "B612 Mono", monospace;
+  font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.75;
-  margin-top: 0.35rem;
+  letter-spacing: 0.1em;
+  color: var(--kg-steel);
+  margin-top: 0.45rem;
 }
-@media screen and (max-width: 44.98em) {
-  .kg-stats { grid-template-columns: repeat(2, 1fr); }
-}
+@media screen and (max-width: 44.98em) { .kg-stats { grid-template-columns: repeat(2, 1fr); } }
 
 /* ==========================================================================
-   Grid cards — lift the built-in Material card grid a touch
+   Grid cards — soft corners, accent hairline on hover
    ========================================================================== */
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid > .card {
-  border-radius: 8px;
-  transition: transform 120ms ease, box-shadow 120ms ease;
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  border-color: var(--kg-line);
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
 }
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(11,46,79,0.12);
-  border-color: var(--kg-gold);
+  box-shadow: 0 10px 30px rgba(20,24,27,0.10);
+  border-color: var(--kg-accent);
 }
-.md-typeset .grid.cards > ul > li > hr {
-  border-color: var(--kg-gold);
-  opacity: 0.5;
-}
+.md-typeset .grid.cards > ul > li > hr { border-color: var(--kg-accent); opacity: 0.45; }
 
-/* Section eyebrow used on interior pages */
+/* ==========================================================================
+   Section eyebrow + placeholder frame
+   ========================================================================== */
 .kg-eyebrow {
   display: inline-block;
   font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--kg-gold-deep);
+  color: var(--kg-accent);
   font-weight: 700;
 }
-[data-md-color-scheme="slate"] .kg-eyebrow { color: var(--kg-gold); }
+[data-md-color-scheme="slate"] .kg-eyebrow { color: #3FA7BC; }
 
-/* Placeholder frames for imagery not yet supplied */
 .kg-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 240px;
-  border: 2px dashed var(--kg-ocean-light);
-  border-radius: 8px;
-  color: var(--kg-ocean);
+  border: 1px dashed var(--kg-steel);
+  border-radius: 14px;
+  color: var(--kg-steel);
   background:
-    repeating-linear-gradient(
-      45deg,
-      rgba(30,91,143,0.04),
-      rgba(30,91,143,0.04) 12px,
-      rgba(30,91,143,0.08) 12px,
-      rgba(30,91,143,0.08) 24px
-    );
-  font-size: 0.85rem;
+    repeating-linear-gradient(135deg, var(--kg-accent-tint) 0 14px, #F3F7F6 14px 28px);
+  font-family: "B612 Mono", monospace;
+  font-size: 0.8rem;
   text-align: center;
   padding: 1.5rem;
   margin: 1.5rem 0;
 }
 [data-md-color-scheme="slate"] .kg-placeholder {
-  color: var(--kg-ocean-light);
-  border-color: var(--kg-ocean);
+  background: rgba(255,255,255,0.03);
+  color: var(--kg-steel);
 }

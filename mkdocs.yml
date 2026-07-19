@@ -1,12 +1,11 @@
 site_name: K Global
 site_description: >-
-  K Global — one airline, one callsign, the whole world. A full-spectrum
-  virtual airline flown on VATSIM under a single callsign, KAY ("Kayak"),
-  from a Frankfurt core.
+  K Global — go further, together. A community-driven virtual airline on
+  VATSIM, dispatched through VAMSYS: a premium place to fly, learn and belong,
+  with nine business units growing from a Frankfurt core.
 site_author: K Global
-# Served from a GitHub Pages project path unless a custom domain is set.
-# If a custom domain is configured (docs/CNAME), update this to match.
-site_url: https://k-global.github.io/website/
+# Custom domain (see docs/CNAME). Keep in sync with the Pages custom domain.
+site_url: https://kglobalair.com/
 
 # Fail the build on broken internal links / nav — enforced in CI too.
 strict: true
@@ -25,7 +24,7 @@ theme:
     repo: fontawesome/brands/github
   font:
     text: Inter
-    code: Roboto Mono
+    code: B612 Mono
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"

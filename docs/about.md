@@ -4,62 +4,77 @@ title: About K Global
 
 <span class="kg-eyebrow">The story</span>
 
-# One brand, one callsign, the whole group
+# A premium place to fly, learn and belong
 
-K Global is a **fictional virtual airline** built for flight simulation on
-[VATSIM](https://vatsim.net) and dispatched through VAMSYS. It is a stylised
-homage to the **Lufthansa Group** — a mainline carrier surrounded by its
-leisure, low-cost, regional and cargo arms — reimagined as a single, coherent
-airline that a virtual pilot can join and fly across the entire market.
+K Global is a **community-driven virtual airline** built on VAMSYS and flown on
+[VATSIM](https://vatsim.net), connecting flight-simulation enthusiasts across
+the globe. We pair the precision of real-world aviation with the warmth of a
+shared crew room. Under the K Global master brand sit **nine business units**,
+each serving a different way to fly — and one identity holds them together.
 
-## The concept
+<div class="grid cards" markdown>
 
-Most virtual airlines pick a lane: long-haul only, low-cost only, one region,
-one fleet. K Global does the opposite. The founding idea is **coverage and
-coherence** — model the whole group market map, then keep it legible enough
-that the shape of a flight tells you the region and the kind of flying before
-you've even loaded the gate.
+-   __Mission__
 
-Everything flies under **one callsign — KAY, telephony "Kayak."** There are no
-separate brands on frequency and no confusion about who you're talking to.
-Whether it's a First-class flagship out of Frankfurt or a turboprop into a
-short regional field, on the radio it's all K Global.
+    ---
 
-- **Brand:** K Global
-- **Callsign:** KAY &mdash; spoken *"Kayak"* &mdash; one callsign for the whole group
-- **Home hub:** Frankfurt (EDDF)
-- **Platform:** VATSIM, dispatched via VAMSYS
-- **Registrations:** a single German-scheme `D-AK…` fleet identity across every tail
+    To give every virtual aviator a premium place to fly, learn and belong —
+    one accurate, well-crafted flight at a time.
 
-## The Lufthansa parallel
+-   __Vision__
 
-K Global's nine business units map onto the shape of a real-world airline
-group. It's a fictional homage — no real branding, liveries or trademarks are
-reproduced — but the *market structure* will feel familiar to anyone who
-knows the European majors.
+    ---
 
-| K Global unit | Real-world shape it echoes |
-|---|---|
-| **Premier** | The flagship / First-class mainline product |
-| **Intercontinental** | Standard long-haul mainline |
-| **Regular** | Full-service short- and medium-haul |
-| **City** | Full-service service to secondary cities |
-| **Express** | Low-cost, point-to-point |
-| **Charter / Vacation** | Leisure and holiday flying |
-| **Regional** | Turboprop and regional-jet feed |
-| **Executive** | Business-jet and VIP charter |
-| **Cargo** | Main-deck freight |
+    A global network where simulated flying feels as considered and connected
+    as the real thing.
+
+</div>
+
+## What we value
+
+<div class="grid cards" markdown>
+
+-   :material-target:{ .lg .middle } __Precision__
+
+    ---
+
+    Real-world routes, accurate liveries, correct procedures. Detail is respect.
+
+-   :material-account-group:{ .lg .middle } __Community__
+
+    ---
+
+    The crew is the airline. We fly, learn and improve together.
+
+-   :material-compass-rose:{ .lg .middle } __Exploration__
+
+    ---
+
+    Nine business units, one growing map. There is always another destination.
+
+-   :material-diamond-stone:{ .lg .middle } __Craft__
+
+    ---
+
+    Refined, understated, consistent. Everything we publish looks the part.
+
+</div>
+
+## The mark — the paddler
+
+Our symbol is a paddler: self-propelled, forward-leaning, in control. It's a
+nod to momentum earned by effort — a community that moves under its own power.
+It's the thread that ties every business unit together, from a flagship
+long-haul out of Frankfurt to a turboprop into a short regional field.
+
+## One brand, nine ways to fly
+
+Every unit shares the K Global identity and locks up the same symbol with its
+own name. What sets the units apart is the mission — who they carry, how far,
+and in what.
 
 [See what each unit flies :material-arrow-right:](business-units/index.md){ .md-button }
 
-## One livery, many variations
-
-K Global wears a single core livery with per-unit and per-hub variations on
-the theme, all carried on a unified German-scheme `D-AK…` registration
-identity. It's the visual thread that ties a Frankfurt flagship, a holiday
-charter and a Pacific freighter together as unmistakably the same airline.
-
 !!! note "A fictional airline"
-    K Global exists only inside flight simulation on VATSIM. It is not a real
-    carrier and is not affiliated with, endorsed by, or connected to any
-    real-world airline or group.
+    K Global is a virtual airline for flight-simulation use on VATSIM. It is not
+    a real carrier and is not affiliated with any real-world airline.

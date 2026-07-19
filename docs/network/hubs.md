@@ -28,7 +28,7 @@ role in the wider web. Frankfurt is home; the rest carry their continents.
 
     **Frankfurt (EDDF)** is the core. Every wave in the network is timed to
     connect back through it, so short-haul feed and long-haul departures line
-    up the way they do at a real group hub. It's the busiest, most varied
+    up the way they do at a real-world hub airline. It's the busiest, most varied
     place to be based — every unit and nearly every fleet type passes through.
 
 === "Asia"
