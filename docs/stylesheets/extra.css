@@ -1,0 +1,239 @@
+/* ==========================================================================
+   K Global — brand system
+   --------------------------------------------------------------------------
+   This is the single source of truth for brand colour. A rebrand should be a
+   one-file change: adjust the tokens below and the whole site follows.
+
+   Palette (fictional Lufthansa-Group homage — deliberately legally distinct;
+   no trademarked logo or crane-yellow reproduced):
+     - Deep navy   #0B2E4F   (primary)
+     - Ocean blue  #1E5B8F   (links / interactive)
+     - Warm gold   #D4A24C   (accent)
+   ========================================================================== */
+
+:root {
+  --kg-navy:        #0B2E4F;
+  --kg-navy-deep:   #071F36;
+  --kg-ocean:       #1E5B8F;
+  --kg-ocean-light: #3E7EB5;
+  --kg-gold:        #D4A24C;
+  --kg-gold-deep:   #B8863A;
+  --kg-cloud:       #F4F7FA;
+  --kg-ink:         #0E1B28;
+}
+
+/* ---- Light scheme -------------------------------------------------------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--kg-navy);
+  --md-primary-fg-color--light: var(--kg-ocean);
+  --md-primary-fg-color--dark:  var(--kg-navy-deep);
+  --md-accent-fg-color:         var(--kg-gold-deep);
+  --md-typeset-a-color:         var(--kg-ocean);
+}
+
+/* ---- Dark scheme --------------------------------------------------------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--kg-navy-deep);
+  --md-primary-fg-color--light: var(--kg-ocean);
+  --md-primary-fg-color--dark:  #050F1C;
+  --md-accent-fg-color:         var(--kg-gold);
+  --md-typeset-a-color:         var(--kg-ocean-light);
+  --md-hue: 215;
+}
+
+/* ==========================================================================
+   Hero (homepage)
+   ========================================================================== */
+.kg-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5.5rem 1rem 5rem;
+  color: #fff;
+  background:
+    radial-gradient(120% 120% at 50% 0%, rgba(212,162,76,0.20) 0%, rgba(11,46,79,0) 55%),
+    linear-gradient(160deg, var(--kg-navy) 0%, var(--kg-navy-deep) 70%, #04121f 100%);
+  overflow: hidden;
+}
+
+/* Subtle great-circle "route" arcs behind the hero text. */
+.kg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 120%, rgba(255,255,255,0.06) 0 1px, transparent 1px),
+    radial-gradient(circle at 85% 130%, rgba(212,162,76,0.10) 0 1px, transparent 1px);
+  background-size: 3px 3px, 4px 4px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.kg-hero__inner {
+  position: relative;
+  max-width: 46rem;
+  z-index: 1;
+}
+
+.kg-hero__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--kg-gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.kg-hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.08;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.kg-hero p.kg-hero__lede {
+  font-size: 1.12rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.86);
+  margin: 0 auto 2rem;
+  max-width: 40rem;
+}
+
+.kg-hero__cta {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kg-hero .md-button {
+  margin: 0;
+}
+
+.kg-hero .md-button--primary {
+  background-color: var(--kg-gold);
+  border-color: var(--kg-gold);
+  color: var(--kg-ink);
+}
+.kg-hero .md-button--primary:hover,
+.kg-hero .md-button--primary:focus {
+  background-color: #E7B968;
+  border-color: #E7B968;
+  color: var(--kg-ink);
+}
+.kg-hero .md-button:not(.md-button--primary) {
+  color: #fff;
+  border-color: rgba(255,255,255,0.55);
+}
+.kg-hero .md-button:not(.md-button--primary):hover {
+  background-color: rgba(255,255,255,0.10);
+  border-color: #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 44.98em) {
+  .kg-hero { padding: 3.5rem 1rem; }
+  .kg-hero h1 { font-size: 2rem; }
+}
+
+/* ==========================================================================
+   Stat band
+   ========================================================================== */
+.kg-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2.5rem 0 1rem;
+  text-align: center;
+}
+.kg-stats .kg-stat {
+  padding: 1rem 0.5rem;
+  border-top: 3px solid var(--kg-gold);
+  background: var(--kg-cloud);
+  border-radius: 0 0 6px 6px;
+}
+[data-md-color-scheme="slate"] .kg-stats .kg-stat {
+  background: rgba(255,255,255,0.03);
+}
+.kg-stats .kg-stat__num {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--md-primary-fg-color);
+  line-height: 1.1;
+}
+[data-md-color-scheme="slate"] .kg-stats .kg-stat__num {
+  color: var(--kg-gold);
+}
+.kg-stats .kg-stat__label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  margin-top: 0.35rem;
+}
+@media screen and (max-width: 44.98em) {
+  .kg-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ==========================================================================
+   Grid cards — lift the built-in Material card grid a touch
+   ========================================================================== */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 8px;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(11,46,79,0.12);
+  border-color: var(--kg-gold);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--kg-gold);
+  opacity: 0.5;
+}
+
+/* Section eyebrow used on interior pages */
+.kg-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--kg-gold-deep);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .kg-eyebrow { color: var(--kg-gold); }
+
+/* Placeholder frames for imagery not yet supplied */
+.kg-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  border: 2px dashed var(--kg-ocean-light);
+  border-radius: 8px;
+  color: var(--kg-ocean);
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(30,91,143,0.04),
+      rgba(30,91,143,0.04) 12px,
+      rgba(30,91,143,0.08) 12px,
+      rgba(30,91,143,0.08) 24px
+    );
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+[data-md-color-scheme="slate"] .kg-placeholder {
+  color: var(--kg-ocean-light);
+  border-color: var(--kg-ocean);
+}

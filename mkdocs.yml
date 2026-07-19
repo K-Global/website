@@ -1,0 +1,103 @@
+site_name: K Global
+site_description: >-
+  K Global — one airline, one callsign, the whole world. A full-spectrum
+  virtual airline flown on VATSIM under a single callsign, KAY ("Kayak"),
+  from a Frankfurt core.
+site_author: K Global
+# Served from a GitHub Pages project path unless a custom domain is set.
+# If a custom domain is configured (docs/CNAME), update this to match.
+site_url: https://k-global.github.io/website/
+
+# Fail the build on broken internal links / nav — enforced in CI too.
+strict: true
+
+# Internal notes that ship in the repo but are not site pages.
+exclude_docs: |
+  assets/README.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: Roboto Mono
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+  - glightbox
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Network:
+      - Overview: network/index.md
+      - The ten hubs: network/hubs.md
+  - Business Units: business-units/index.md
+  - Fleet: fleet/index.md
+  - Flying Here: flying/index.md
+  - Join: join.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/K-Global
+      name: K Global on GitHub
+  generator: false
+
+copyright: >-
+  K Global is a fictional virtual airline for flight-simulation use on VATSIM.
+  Not affiliated with any real-world carrier.

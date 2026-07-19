@@ -1,0 +1,31 @@
+{#-
+  Homepage template: full-bleed brand hero above the standard page content.
+  Applied only to pages that set `template: home.html` in their front matter
+  (see docs/index.md). Everything else uses Material's default main.html.
+-#}
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="kg-hero">
+    <div class="kg-hero__inner">
+      <span class="kg-hero__eyebrow">Callsign KAY &mdash; &ldquo;Kayak&rdquo;</span>
+      <h1>One airline, one callsign,<br>the whole world.</h1>
+      <p class="kg-hero__lede">
+        K&nbsp;Global is a full-spectrum virtual airline flown on VATSIM under a
+        single callsign &mdash; from First-class ultra-long-haul to low-cost,
+        leisure charter, regional feed, business jets and freight, all growing
+        from a Frankfurt core.
+      </p>
+      <div class="kg-hero__cta">
+        <a href="{{ 'join/' | url }}" class="md-button md-button--primary">
+          Fly with us
+        </a>
+        <a href="{{ 'network/' | url }}" class="md-button">
+          Explore the network
+        </a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
